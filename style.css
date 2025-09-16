@@ -1,0 +1,100 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make the body fill the entire viewport */
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars */
+    background-color: #000; /* Black background for any areas not covered by canvas */
+}
+
+/* Make the canvas fill the entire browser window */
+#gameCanvas {
+    display: block; /* Remove default inline spacing */
+    width: 100vw;
+    height: 100vh;
+    background-color: #000; /* Black background */
+    cursor: crosshair; /* Indicate this is an interactive game area */
+}
+
+/* UI Overlay */
+#uiOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Allow clicks to pass through to canvas */
+    z-index: 10;
+}
+
+.ui-element {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    pointer-events: auto; /* Allow interaction with UI elements */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Connection Status */
+#connectionStatus {
+    top: 20px;
+    left: 20px;
+}
+
+.status-connecting {
+    background-color: rgba(255, 165, 0, 0.8); /* Orange */
+}
+
+.status-connected {
+    background-color: rgba(0, 255, 0, 0.8); /* Green */
+}
+
+.status-disconnected {
+    background-color: rgba(255, 0, 0, 0.8); /* Red */
+}
+
+.status-error {
+    background-color: rgba(255, 0, 0, 0.8); /* Red */
+}
+
+/* Player Count */
+#playerCount {
+    top: 20px;
+    right: 20px;
+}
+
+/* Controls */
+#controls {
+    bottom: 20px;
+    left: 20px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* Player Info */
+#playerInfo {
+    bottom: 20px;
+    right: 20px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+#playerName {
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 4px;
+}
+
+#playerPosition {
+    color: #E0E0E0;
+}
