@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini MMORPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    
+    <script>
+        // Get canvas and context
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Set canvas size to fill the browser window
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        
+        // Initialize canvas size
+        resizeCanvas();
+        
+        // Update canvas size when window is resized
+        window.addEventListener('resize', resizeCanvas);
+        
+        // Load and draw the world map
+        const worldImage = new Image();
+        worldImage.onload = function() {
+            // Draw the world map at actual size (2048x2048)
+            // Position it so we see the upper left corner
+            ctx.drawImage(worldImage, 0, 0, 2048, 2048, 0, 0, 2048, 2048);
+        };
+        
+        // Load the world map image
+        worldImage.src = 'world.jpg';
+        
+        // Handle any loading errors
+        worldImage.onerror = function() {
+            console.error('Failed to load world map image');
+            // Draw a placeholder if image fails to load
+            ctx.fillStyle = '#2d5016';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#ffffff';
+            ctx.font = '24px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('World map failed to load', canvas.width / 2, canvas.height / 2);
+        };
+    </script>
+</body>
+</html>
