@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+}
+
+canvas {
+    display: block;
+}
+
+/* Player List UI */
+.player-list {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    min-width: 200px;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.player-list h3 {
+    margin: 0 0 10px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.player-list-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.player-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.player-item.self {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.status-dot.moving {
+    background: #4CAF50;
+}
+
+.status-dot.idle {
+    background: #FFA000;
+}
+
+.player-username {
+    flex-grow: 1;
+}
+
+.player-username.self {
+    font-weight: bold;
+}
+
+.player-distance {
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.6);
+}
