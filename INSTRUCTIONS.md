@@ -13,10 +13,10 @@ This prework, will get you started with AI-enabled open source workflows utilizi
 1. Set up an AI-native text editor or IDE: We recommend: [Cursor](https://cursor.com/students), but you can also use VSCode augmented with [Claude Code](https://www.claude.com/product/claude-code) or [Github Copilot](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro)
 2. This repository has [4 milestone issues](https://github.com/codepath/ai_open_source_prework/issues) for you to solve. Take a look at them on the Github.
 3. To complete this assignment:
-    1. [Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) your own copy of the prework repo 
-    2. Clone the repo to your computer and solve the [4 issues](https://github.com/codepath/ai_open_source_prework/issues) (you are allowed / expected to use AI support for this task) 
+    1. [Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) your own copy of [the prework repo](https://github.com/codepath/ai_open_source_prework/tree/main) 
+    2. Clone the [repo](https://github.com/codepath/ai_open_source_prework/tree/main) to your computer and solve the [4 issues](https://github.com/codepath/ai_open_source_prework/issues) (you are allowed / expected to use AI support for this task) 
     3. Push your completed code to Github and submit your completed repo with all solved issues [here](https://apply.codepath.org/cohorts/2025-ai-open-source-capstone/application/prework)
-    4. (Optional but highly encouraged): [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) on the main repo with your changes
+    4. (Optional but highly encouraged): [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) on the [main repo](https://github.com/codepath/ai_open_source_prework/tree/main) with your changes
 
 ## Getting Started
 
@@ -103,4 +103,4 @@ Refine the behaviors, add features, or improve the UI. Claude is not bad at gene
 ## Submission
 Push your completed code to Github and submit your completed repo with all solved issues [here](https://apply.codepath.org/cohorts/2025-ai-open-source-capstone/application/prework)
 
-(Optional but highly encouraged): [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) on the main repo with your changes
+(Optional but highly encouraged): [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) on the [main repo](https://github.com/codepath/ai_open_source_prework/tree/main) with your changes
